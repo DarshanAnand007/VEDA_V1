@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant</title>
+</head>
+<body>
+    <h1>Voice Assistant</h1>
+
+    <button onclick="startAssistant()">Start Voice Recognition</button>
+
+    <script>
+        function startAssistant() {
+            // Make a request to start the voice assistant
+            fetch('/start_assistant')
+                .then(response => response.text())
+                .then(data => console.log(data));
+        }
+    </script>
+</body>
+</html>
